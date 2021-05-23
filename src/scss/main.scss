@@ -132,6 +132,21 @@ body {
 
   &__link {
     font-size: 24px;
-    cursor: pointer;
+    color: $background-contrast-color;
+    text-decoration: none;
+
+    transition: color 150ms;
+
+    &--github:hover {
+      color: rgb(153, 153, 153);
+    }
+
+    &--twitter:hover {
+      color: $twitter-blue;
+    }
+
+    &--linkedin:hover {
+      color: $linkedin-blue;
+    }
   }
 }
