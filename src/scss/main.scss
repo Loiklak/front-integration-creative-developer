@@ -6,7 +6,7 @@
 $page-padding: 48px;
 
 body {
-  font-family: "Roboto", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
   background-color: $background-color;
   color: $background-contrast-color;
   margin: 0;
@@ -50,11 +50,16 @@ body {
     gap: 48px;
     place-items: center;
     font-size: 16px;
+    letter-spacing: 0.15em;
 
     &__link {
-      @include typography-regular;
+      @include typography-bold;
       color: $background-contrast-color;
       text-decoration: none;
+      position: relative;
+      padding: 8px 12px;
+
+      @include text-underline-hover;
     }
   }
 }
