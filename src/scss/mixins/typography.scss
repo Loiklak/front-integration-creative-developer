@@ -1,0 +1,13 @@
+@import "../variables/font-weights.scss";
+
+@mixin typography-regular {
+  font-weight: $font-regular;
+}
+
+@mixin typography-light {
+  font-weight: $font-light;
+}
+
+@mixin typography-bold {
+  font-weight: $font-bold;
+}
